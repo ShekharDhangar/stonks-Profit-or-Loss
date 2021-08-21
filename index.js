@@ -11,13 +11,13 @@ function calculateProfitandLoss(buyPrice,sellPrice,numOfStock){
         const profitPercentage = ((profit/buyPrice)*100).toFixed(2);
         // return ()
         output.style.color="green";
-        output.innerText = "Yay!! Your Profit is "+ profit + " and profit Percentage is "+ profitPercentage+ " :)";
+        output.innerText = "Yay!! Your Profit is "+ profit + " and profit Percentage is "+ profitPercentage + "%"+" :)";
 
     }else if(buyPrice>sellPrice){
         const loss = buyPrice-sellPrice;
         const lossPercentage = ((loss/buyPrice)*100).toFixed(2);
         output.style.color="red";
-        output.innerText= "Whoops!! Your loss is "+loss + " and loss Percentage is "+ lossPercentage+ " :(";
+        output.innerText= "Whoops!! Your loss is "+loss + " and loss Percentage is "+ lossPercentage + "%"+" :(";
     }else{
         output.style.color="white";
         output.innerText = "No pain No gain, and no gain no pain :)"
