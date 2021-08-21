@@ -51,12 +51,10 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
-    border:1px solid red;
     padding: 5rem;
 
 }
 .output{
     text-align: center;
-    border:1px solid red;
     font-size: 2rem;
 }
