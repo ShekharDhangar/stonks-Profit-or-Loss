@@ -27,9 +27,9 @@ function calculateProfitandLoss(buyPrice,sellPrice,numOfStock){
 }
 
 function calculateBtnHandler(){
-    const numOfStock = stockNum.value;
-    const buyPrice = (initialPrice.value) * numOfStock ;
-    const sellPrice = (pricesell.value)* numOfStock;
+    const numOfStock = Number(stockNum.value);
+    const buyPrice = Number(initialPrice.value) * numOfStock;
+    const sellPrice = Number(pricesell.value)* numOfStock;
     calculateProfitandLoss(buyPrice,sellPrice,numOfStock);
 
 
