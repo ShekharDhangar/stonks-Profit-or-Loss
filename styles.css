@@ -58,3 +58,26 @@ input{
     text-align: center;
     font-size: 2rem;
 }
+
+/* Media Queries */
+@media (max-width:850px){
+    .wrapper{
+        display: grid;
+        height: 100vh;
+    }
+    .user-input-container{
+        padding-top: 5%;
+        width: 100%;
+        max-height: 70vh;
+    }
+    .output-container{
+        width: 100%;
+        max-height: 30vh;
+    }
+
+    .input-section{
+        margin: 0 auto;
+        width: 50%;
+    }
+    
+}
