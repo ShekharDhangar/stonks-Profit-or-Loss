@@ -66,18 +66,26 @@ input{
         height: 100vh;
     }
     .user-input-container{
-        padding-top: 5%;
+        padding-top: 10%;
         width: 100%;
-        max-height: 70vh;
+        max-height: 60vh;
     }
     .output-container{
         width: 100%;
-        max-height: 30vh;
+        max-height: 40vh;
     }
 
     .input-section{
         margin: 0 auto;
         width: 50%;
+    }
+    input{
+        font-size: 0.7rem;
+
+    }
+    .btn{
+        padding: 0.5rem;
+        margin-top: 0;
     }
     
 }
