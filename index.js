@@ -22,14 +22,21 @@ function calculateProfitandLoss(buyPrice,sellPrice,numOfStock){
     }
 }
 
-function showOutput(){
-
-}
 
 function calculateBtnHandler(){
     const numOfStock = Number(stockNum.value);
     const buyPrice = Number(initialPrice.value);
     const sellPrice = Number(pricesell.value);
-    calculateProfitandLoss(buyPrice,sellPrice,numOfStock);
+
+    if((numOfStock == "") || (buyPrice == "") || (sellPrice == "") ){
+        output.style.color="white";
+        output.innerText = "Please fill all input box";
+    }else if( (numOfStock<0) || (buyPrice <0) || (sellPrice<0) ){
+        output.style.color="white";
+        output.innerText = "Please enter positve Integer";
+    }else{
+        calculateProfitandLoss(buyPrice,sellPrice,numOfStock);
+    }
+    
 }
 calculateBtn.addEventListener("click", calculateBtnHandler);
